@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Pacific Trails Resort :: Reservations</title> 
+        <meta charset ="utf-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <meta name="description" content="The sales page for the Better Billiards website which contains a form to fill out for interest in service from Better Billiards along with a table for a breakdown of the services.">
+        <link rel="stylesheet" href="billiards.css">
+    </head>
+    <body>
+    <div id="wrapper">
+        
+        <header>
+            <h1 href="index.html"> Better Billiards </h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> &nbsp;</li>
+                <li><a href="inventory.html">Inventory</a> &nbsp;</li>
+                <li><a href="sales.html">Sales</a> &nbsp;</li>
+                <li><a href="reviews.html">Reviews</a> &nbsp;</li>
+            </ul>
+        </nav>
+        <main>
+            <h2> Sales Inquires</h2>
+            
+            <h3> Contact us today!</h3>
+
+            <p>Required fields are marked with an asterisk *.</p>
+            
+            <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+                <label for="myFName">*First Name:</label>
+                <input type="text" id="myFName" name="myFName" required>
+
+                <label for="myLname">*Last Name:</label>
+                <input type="text" id="myLName" name="myLName" required>
+
+                <label for="myEmail">*E-mail Address:</label>
+                <input type="text" id="myEmail" name="myEmail" required>
+
+                <label for="myPhone">Phone Number:</label>
+                <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+        
+                <label for="myArrival">Requested Service Date:</label>
+                <input type="date" id="myArrival" name="myArrival">
+        
+                <label for="myComments">*What service are you requesting?:</label>
+                <textarea id="myComments" name="myComments" rows="2" cols="30" required></textarea>
+        
+                <input type="submit" value="Submit">              
+            </form>
+
+             <table>
+                <tr>
+                    <th>Serivce</th>
+                    <th>Description</th>
+                    <th>Cost Estimate</th>
+                </tr>
+                <tr>
+                    <td>Table Relocation</td>
+                    <td class="text">Relocating a table from one house to another or even within your own home keeping the same cloth and bumpers</td>
+                    <td>$350</td>
+                </tr>
+                <tr>
+                    <td>Recloth</td>
+                    <td class="text">Exchanging the cloth currently on your table for a new cloth</td>
+                    <td>$600</td>
+                </tr>
+                <tr>
+                    <td>Re-Rubber</td>
+                    <td class="text"> Installing new bumpers onto your table, a recloth required as well with this service</td>
+                    <td>$900</td>
+                </tr>
+                <tr>
+                    <td>Installation</td>
+                    <td class="text"> Installing new table to you with the cloth and accessories of your choice</td>
+                    <td>$1000-$5000</td>
+                </tr>
+
+            </table>
+            
+           <div id="location">
+                <br><span class="billiards">Better Billiards</span><br>
+                1415 E University Drive<br>
+                Tempe, AZ 85281<br>
+                <br>
+            </div>  
+            <div id="contact">
+                <span class="billiards">Contact us:<br>
+                    Phone: 480-351-9122<br> 
+                    <a href="mailto:glausbilliards@gmail.com">glausbilliards@gmail.com</a></span><br>
+
+            </div>
+           
+        </main>
+        
+        <footer>
+            
+                
+                    Copyright &copy; 2025 Better Billiards<br>
+                    <a href="mailto:glausbilliards@gmail.com">glausbilliards@gmail.com</a>
+                  
+            
+        </footer>              
+    </div>
+    </body>
+</html>
+
